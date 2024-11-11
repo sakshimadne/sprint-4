@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Store</h1>
+    </header>
+
+    <main>
+        <!-- search bar -->
+         <!-- Add this in the main section above the products-container -->
+<section id="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search products..."
+    oninput="debouncedSearch()"
+  />
+</section>
+ <!-- Auto-Suggestions with Debounced Search -->
+
+
+
+      <section id="products-container">
+        <h2>Products</h2>
+        <!-- Products will be dynamically loaded here -->
+      </section>
+
+      <section id="cart-container">
+        <h2>Shopping Cart</h2>
+        <!-- Cart items will be dynamically loaded here -->
+      </section>
+    </main>
+
+    <!-- Load the main JavaScript file as a module -->
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
